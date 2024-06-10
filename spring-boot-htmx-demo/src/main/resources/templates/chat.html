@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layout}">
+<body>
+<div layout:fragment="content">
+    <h2>Chat Support</h2>
+
+    <div class="alert alert-dark" role="alert">
+        <h3>Try following</h3>
+        <ul>
+            <li>What is the status of my order with number order-013? </li>
+            <li>Cancel my order with number order-010? </li>
+        </ul>
+    </div>
+
+    <div id="chat" class="pt-3">
+        <form id="chat-form" class="chat-form" method="post"
+            th:hx-post="@{/chat}" hx-target="#chat-response">
+            <div class="mb-3">
+                <label for="question" class="form-label"><strong>Your Question</strong></label>
+                <textarea class="form-control" id="question" name="question" rows="5"></textarea>
+            </div>
+            <button class="btn btn-primary" type="submit">Send</button>
+        </form>
+    </div>
+
+    <div id="chat-response" class="pt-3"></div>
+
+</div>
+</body>
+</html>

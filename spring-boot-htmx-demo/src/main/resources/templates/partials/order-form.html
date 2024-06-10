@@ -1,0 +1,62 @@
+<form class="row g-3" method="post" th:action="@{/orders}">
+    <div class="col-md-6">
+        <label for="customerName" class="form-label">Customer Name</label>
+        <input type="text" class="form-control"
+               id="customerName"
+               name="customer.name"
+               value=""/>
+    </div>
+    <div class="col-md-6">
+        <label for="customerEmail" class="form-label">Customer Email</label>
+        <input type="email" class="form-control"
+               id="customerEmail"
+               name="customer.email"
+               value="">
+    </div>
+    <div class="col-md-6">
+        <label for="customerPhone" class="form-label">Customer Phone</label>
+        <input type="text" class="form-control"
+               id="customerPhone"
+               name="customer.phone"
+               value="">
+    </div>
+    <div class="col-6">
+        <label for="deliveryAddressLine1" class="form-label">Delivery Address Line 1</label>
+        <input class="form-control"
+               id="deliveryAddressLine1"
+               name="deliveryAddress.addressLine1"/>
+    </div>
+    <div class="col-6">
+        <label for="deliveryAddressLine2" class="form-label">Delivery Address Line 2</label>
+        <input class="form-control"
+               id="deliveryAddressLine2"
+               name="deliveryAddress.addressLine2"/>
+    </div>
+    <div class="col-6">
+        <label for="deliveryAddressCity" class="form-label">Delivery Address City</label>
+        <input class="form-control"
+               id="deliveryAddressCity"
+               name="deliveryAddress.city"/>
+    </div>
+    <div class="col-6">
+        <label for="deliveryAddressState" class="form-label">Delivery Address State</label>
+        <input class="form-control"
+               id="deliveryAddressState"
+               name="deliveryAddress.state"/>
+    </div>
+    <div class="col-6">
+        <label for="deliveryAddressZipCode" class="form-label">Delivery Address ZipCode</label>
+        <input class="form-control"
+               id="deliveryAddressZipCode"
+               name="deliveryAddress.zipCode"/>
+    </div>
+    <div class="col-6">
+        <label for="deliveryAddressCountry" class="form-label">Delivery Address Country</label>
+        <input class="form-control"
+               id="deliveryAddressCountry"
+               name="deliveryAddress.country"/>
+    </div>
+    <div class="col-12">
+        <button type="submit" class="btn btn-primary">Place Order</button>
+    </div>
+</form>

@@ -1,0 +1,13 @@
+<tr th:each="order : ${orders}">
+    <td><a th:href="${'/orders/'+order.orderNumber}" th:text="${order.orderNumber}">OrderNumber</a></td>
+    <td th:text="${order.status}">status</td>
+</tr>
+<tr id="replaceMe" th:if="${hasMore}">
+    <td colspan="2">
+        <button class='btn btn-secondary' th:hx-get="@{'/orders?page='+${nextPageNo}}"
+                hx-target="#replaceMe"
+                hx-swap="outerHTML">
+            Load More Orders
+        </button>
+    </td>
+</tr>
