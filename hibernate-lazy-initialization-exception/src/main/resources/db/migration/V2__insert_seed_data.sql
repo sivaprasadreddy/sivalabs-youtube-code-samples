@@ -1,0 +1,46 @@
+DELETE FROM comments;
+DELETE FROM posts;
+
+INSERT INTO posts (id, title, content, created_at) VALUES
+    (1, 'Post 1', 'Content for post 1', '2026-03-10T08:00:00Z'),
+    (2, 'Post 2', 'Content for post 2', '2026-03-10T08:10:00Z'),
+    (3, 'Post 3', 'Content for post 3', '2026-03-10T08:20:00Z'),
+    (4, 'Post 4', 'Content for post 4', '2026-03-10T08:30:00Z'),
+    (5, 'Post 5', 'Content for post 5', '2026-03-10T08:40:00Z'),
+    (6, 'Post 6', 'Content for post 6', '2026-03-10T08:50:00Z'),
+    (7, 'Post 7', 'Content for post 7', '2026-03-10T09:00:00Z'),
+    (8, 'Post 8', 'Content for post 8', '2026-03-10T09:10:00Z'),
+    (9, 'Post 9', 'Content for post 9', '2026-03-10T09:20:00Z'),
+    (10, 'Post 10', 'Content for post 10', '2026-03-10T09:30:00Z'),
+    (11, 'Post 11', 'Content for post 11', '2026-03-10T09:40:00Z'),
+    (12, 'Post 12', 'Content for post 12', '2026-03-10T09:50:00Z'),
+    (13, 'Post 13', 'Content for post 13', '2026-03-10T10:00:00Z'),
+    (14, 'Post 14', 'Content for post 14', '2026-03-10T10:10:00Z'),
+    (15, 'Post 15', 'Content for post 15', '2026-03-10T10:20:00Z');
+
+INSERT INTO comments (id, post_id, content, created_at) VALUES
+    (1, 1, 'Comment 1 for post 1', '2026-03-10T08:01:00Z'),
+    (2, 1, 'Comment 2 for post 1', '2026-03-10T08:02:00Z'),
+    (3, 1, 'Comment 3 for post 1', '2026-03-10T08:03:00Z'),
+    (4, 2, 'Comment 1 for post 2', '2026-03-10T08:11:00Z'),
+    (5, 2, 'Comment 2 for post 2', '2026-03-10T08:12:00Z'),
+    (6, 3, 'Comment 1 for post 3', '2026-03-10T08:21:00Z'),
+    (7, 3, 'Comment 2 for post 3', '2026-03-10T08:22:00Z'),
+    (8, 4, 'Comment 1 for post 4', '2026-03-10T08:31:00Z'),
+    (9, 4, 'Comment 2 for post 4', '2026-03-10T08:32:00Z'),
+    (10, 5, 'Comment 1 for post 5', '2026-03-10T08:41:00Z'),
+    (11, 5, 'Comment 2 for post 5', '2026-03-10T08:42:00Z'),
+    (12, 6, 'Comment 1 for post 6', '2026-03-10T08:51:00Z'),
+    (13, 6, 'Comment 2 for post 6', '2026-03-10T08:52:00Z'),
+    (14, 7, 'Comment 1 for post 7', '2026-03-10T09:01:00Z'),
+    (15, 7, 'Comment 2 for post 7', '2026-03-10T09:02:00Z'),
+    (16, 8, 'Comment 1 for post 8', '2026-03-10T09:11:00Z'),
+    (17, 8, 'Comment 2 for post 8', '2026-03-10T09:12:00Z'),
+    (18, 9, 'Comment 1 for post 9', '2026-03-10T09:21:00Z'),
+    (19, 9, 'Comment 2 for post 9', '2026-03-10T09:22:00Z'),
+    (20, 10, 'Comment 1 for post 10', '2026-03-10T09:31:00Z'),
+    (21, 10, 'Comment 2 for post 10', '2026-03-10T09:32:00Z'),
+    (22, 11, 'Comment 1 for post 11', '2026-03-10T09:41:00Z'),
+    (23, 12, 'Comment 1 for post 12', '2026-03-10T09:51:00Z'),
+    (24, 13, 'Comment 1 for post 13', '2026-03-10T10:01:00Z'),
+    (25, 14, 'Comment 1 for post 14', '2026-03-10T10:11:00Z');
